@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p, ul {
+    line-height:200%;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>포트폴리오</h1>
+<hr>
+
+<h2>Profile</h2>
+
+    <div class="content">
+        <img src="img/pic2.jpg" alt="self" width="280" height="380" style="float:left; margin-right:2em">
+        <h3>About Me</h3>
+        <p>
+            현재 Stony Brook University (뉴욕주립대)에 4학년으로 재학중인 Information Systems (정보시스템학과) 전공 학생입니다.
+            백엔드 웹 기술에 관심을 가지고 있습니다. 졸업예정 시기는 2018.12 입니다.
+        </p>
+        <h3>Personal Info</h3>
+        <ul>
+            <li>Name: 모혜성 (Hyeseong Mo)</li>
+            <li>Date of Birth: 1994년 9월 14일</li>
+            <li>Address: 광주광역시 광산구 소촌동</li>
+            <li>Phone: 010-6726-0914</li>
+            <li>Email: hyeseong0914@hotmail.com</li>
+        </ul>
+    </div>
+<hr>
+<h2>Skills</h2>
+
+    <div class="content">
+        <p>
+            Java 언어로 처음 프로그래밍 언어 공부를 시작하여 기본적인 프로그래밍 지식, 데이터 구조와 알고리즘을 배웠습니다.
+            그리고 Python을 배워 학교의 조교로 활동하면서 코딩을 학생들에게 가르쳐 주기도 했습니다.
+            Perl과 Linux 그리고  Python(깊게)을 배우는 scripting languages과 데이터베이스 수업을 들었고
+            C, C++, JavaScript등 저의 전공에서는 수업을 하지 않는 언어들은 방학때 독학하며 기본 지식을 습득했습니다.
+        </p>
+        <h3>Language</h3>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Ms-Sql</li>
+            <li>MySql</li>
+            <li>Perl</li>
+            <li>Linux</li>
+            <li>HTML/CSS</li>
+        </ul>
+    </div>
+
+<hr>
+<h2>Portfolio</h2>
+    <div class="content">
+        <h2>Wiki</h2>
+        <p>
+            <b>소개</b> <br>
+            심플한 wiki program 으로 회원가입을 통해 로그인을 한 사용자가
+            content를 만들고 편집 할수 있도록 하는 웹사이트입니다. Python의 Flask를 사용해서 코딩 하였습니다. <br><br>
+            <b>어플리케이션 구조</b> <br>
+            <ul>
+                <li>app/: 어플리케이션 파일</li>
+                    <ul>
+                        <li>app/forms.py: Submission 형식</li>
+                        <li>app/models.py: 모델 파일 (Data and data logic)</li>
+                        <li>app/routes.py: 루트 데코레이터 (To bind a function to a URL</li>
+                        <li>app/__init__.py: Initialize everything</li>
+                        <li>app/templates: HTML 파일</li>
+                    </ul>
+                <li>config.py</li>
+                <li>wiki.py: Flask 어플리케이션 스타터</li>
+            </ul>
+            <br>
+        </p>
+        <img src="img/regis.jpg" alt="wiki1" width="75%" height="75%">
+        <img src="img/login.jpg" alt="wiki2" width="75%" height="75%">
+        <img src="img/wiki3.jpg" alt="wiki3" width="50%" height="50%">
+        <p>
+            아직 Front-end를 세련되고 이쁘게 하는 HTML, CSS 코드를 작성하지 않았습니다. 빠른 시일 내에 업데이트할 예정입니다.
+            가장 첫번째의 사진부터 보면 회원가입 페이지이며 사용자의 아이디, 이메일, 비밀번호, 그리고 재확인 비밀번호를 순서로 되어있습니다.
+            가운데 사진은 로그인 페이지이며 회원가입을 한 사용자만 로그인이 가능하도록 코딩 하였고 마지막 사진은 사용자가 등록 할수 있는
+            페이지의 제목과 그 내용입니다. 사진에서는 Pigeon을 제목으로 비둘기에 대한 정보를 내용으로 등록되어 있는 자료입니다.
+        </p>
+        <h3>소스 코드 일부</h3>
+        <img src="img/wikicode.jpg" alt="code" width="700" height="380">
+        <p>
+            위의 소스 코드는 편집을 구현한 부분입니다. 사용자가 등록한 페이지의 내용을 아무 사용자가 편집 할수 있도록 구현하였습니다.
+            편집 하고자 하는 포스트의 아이디로 제목과 내용을 데이터베이스로 부터 불러와 내용을 바꾼 후 바꾸기 전의 포스터를
+            데이터베이스에서 삭제하고 편집한 포스트를 다시 새롭게 추가 하도록 하였습니다.
+        </p>
+    </div>
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
